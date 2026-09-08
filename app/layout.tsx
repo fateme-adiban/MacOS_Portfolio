@@ -4,7 +4,8 @@ import "./globals.css"
 
 const georama = Georama({
   subsets: ["latin"],
-  variable: "--georama"
+  variable: "--georama",
+  style: ["normal", "italic"]
 })
 
 const robotoMono = Roboto_Mono({
