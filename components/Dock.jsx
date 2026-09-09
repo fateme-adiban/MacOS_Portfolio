@@ -5,9 +5,11 @@ import Image from "next/image"
 import { Tooltip } from "react-tooltip"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
+import useWindowStore from "@/store/window"
 
 const Dock = () => {
-  const dockRef = useRef<HTMLDivElement>(null)
+  const dockRef = useRef(null)
+  const { openWindow, closeWindow, windows } = useWindowStore()
 
   useGSAP(() => {
     const dock = dockRef.current
@@ -15,7 +17,7 @@ const Dock = () => {
 
     const icons = dock.querySelectorAll(".dock-icon")
 
-    const animateIcons = (mouseX: number) => {
+    const animateIcons = mouseX => {
       const { left } = dock.getBoundingClientRect()
 
       icons.forEach(icon => {
@@ -34,7 +36,7 @@ const Dock = () => {
       })
     }
 
-    const handleMouseMove = (e: MouseEvent) => {
+    const handleMouseMove = e => {
       const { left } = dock.getBoundingClientRect()
 
       animateIcons(e.clientX - left)
@@ -60,8 +62,21 @@ const Dock = () => {
     }
   }, [])
 
-  const toggleApp = (app: any) => {
-    // TODO Implement Open Window
+  const toggleApp = app => {
+    if (!app.canOpen) return
+
+    const window = windows[app.id]
+
+    if (!window) {
+      console.error(`Window not found for app: ${app.id}`)
+      return
+    }
+
+    if (window.isOpen) {
+      closeWindow(app.id)
+    } else {
+      openWindow(app.id)
+    }
   }
 
   return (
