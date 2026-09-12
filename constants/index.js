@@ -77,24 +77,24 @@ const dockApps = [
 const blogPosts = [
   {
     id: 1,
-    date: "Sep 2, 2025",
-    title: "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
+    date: "Jan 15, 2026",
+    title: "Boost Conversions with Clear Homepages",
     image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it"
+    link: "https://www.linkedin.com/posts/fateme-adiban_your-website-has-to-answer-3-questions-activity-7412381161793937408-ei17"
   },
   {
     id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
+    date: "Oct 28, 2025",
+    title: "Why Beautiful Websites Convert: A Designer’s Perspective",
     image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development"
+    link: "https://www.linkedin.com/posts/fateme-adiban_most-designers-say-pretty-websites-dont-activity-7373239061744025600-x6Ff"
   },
   {
     id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
+    date: "Dec 3, 2025",
+    title: "Your Website Doesn’t Need to Attract People - It Needs to Convince Them",
     image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations"
+    link: "https://www.linkedin.com/posts/fateme-adiban_your-website-doesnt-need-to-attract-people-activity-7407318820597694464-ubDM"
   }
 ]
 
@@ -127,28 +127,14 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro"
-  },
-  {
-    id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/"
-  },
-  {
-    id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro"
+    link: "https://github.com/fateme-adiban"
   },
   {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all"
+    link: "https://www.linkedin.com/in/fateme-adiban/"
   }
 ]
 
@@ -211,7 +197,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "Timez Dashboard",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -219,39 +205,30 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Timez Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
-          description: ["The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.", "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.", "Think of it like walking into a flagship Nike store—but right from your phone or laptop.", "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look."]
+          description: ["Timez is a modern admin dashboard built to make complex data easier to manage, understand, and act on.", "It combines structured tables, interactive charts, filters, and reusable UI components into a clean and intuitive interface.", "The goal was to create a dashboard that feels powerful without becoming overwhelming, keeping important information accessible at a glance.", "It's built with Next and Ant Design, focusing on reusable components, responsive layouts, and a smooth user experience."]
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "timez-dashboard.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://tank-internship.vercel.app",
           position: "top-10 right-20"
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "timez.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
           imageUrl: "/images/project-1.png"
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20"
         }
       ]
     },
@@ -259,7 +236,7 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "Pump Game",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -267,39 +244,30 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "Pump Game Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
-          description: ["AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.", "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.", "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.", "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device."]
+          description: ["Pump Game is an interactive tether prediction platform built around real-time market movements and fast-paced user interactions.", "It combines dynamic price data, interactive game mechanics, and visual feedback to create an engaging trading-inspired experience.", "The interface focuses on making complex market information easy to scan while keeping the gameplay intuitive and responsive.", "Built with Next and modern frontend technologies, the project showcases interactive UI development, responsive design, and real-time data handling."]
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "pump-game.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://tank-internship-git-pumpgame-fateme-adibans-projects.vercel.app",
           position: "top-20 left-20"
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "pump-game.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 left-80",
           imageUrl: "/images/project-2.png"
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 left-5"
         }
       ]
     },
@@ -307,7 +275,7 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "Apple 3D Website",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -315,39 +283,30 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "Apple 3D Website Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
-          description: ["Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.", "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.", "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.", "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design."]
+          description: ["This Apple inspired product experience brings a sleek, interactive 3D presentation to the browser.", "Instead of a traditional product page, it uses immersive visuals, smooth animations, and interactive 3D elements to make the product the center of the experience.", "The interface is designed to feel minimal and premium, with every interaction focused on creating a polished product showcase.", "It's built with Next.js, Three.js, and GSAP, combining 3D rendering with smooth animations and responsive design for an engaging experience."]
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "apple-project.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+          href: "https://apple-adiban.vercel.app",
           position: "top-10 right-20"
         },
         {
           id: 4,
-          name: "food-delivery-app.png",
+          name: "apple-project.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
           imageUrl: "/images/project-3.png"
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20"
         }
       ]
     }
@@ -368,7 +327,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg"
+      imageUrl: "/images/fateme.jpg"
     },
     {
       id: 2,
@@ -377,16 +336,16 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg"
+      imageUrl: "/images/fateme-2.jpg"
     },
     {
       id: 3,
-      name: "conference-me.png",
+      name: "baby-me.png",
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg"
+      imageUrl: "/images/fateme-3.jpg"
     },
     {
       id: 4,
@@ -396,8 +355,8 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
-      description: ["Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.", "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.", "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.", "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅"]
+      image: "/images/fateme.jpg",
+      description: ["Hey! I’m Fateme 👋, a web developer who enjoys building sleek, interactive websites that actually work well.", "I specialize in JavaScript, React, and Next. I love making things feel smooth, fast, and just a little bit delightful.", "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug."]
     }
   ]
 }

@@ -34,15 +34,8 @@ const WindowWrapper = (Component, windowKey) => {
       return () => instance.kill()
     }, [])
 
-    useLayoutEffect(() => {
-      const el = ref.current
-      if (!el) return
-
-      el.style.display = isOpen ? "block" : "none"
-    }, [isOpen])
-
     return (
-      <section id={windowKey} ref={ref} style={{ zIndex }} className="absolute">
+      <section id={windowKey} ref={ref} style={{ zIndex, display: isOpen ? "block" : "none" }} className="absolute">
         <Component {...props} />
       </section>
     )

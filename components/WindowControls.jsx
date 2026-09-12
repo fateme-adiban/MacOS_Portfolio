@@ -1,3 +1,5 @@
+"use client"
+
 import useWindowStore from "@/store/window"
 
 const WindowControls = ({ target }) => {

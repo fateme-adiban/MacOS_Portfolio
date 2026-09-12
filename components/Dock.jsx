@@ -1,7 +1,6 @@
 "use client"
 import { dockApps } from "@/constants"
 import { useRef } from "react"
-import Image from "next/image"
 import { Tooltip } from "react-tooltip"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
@@ -85,7 +84,7 @@ const Dock = () => {
         {dockApps.map(({ id, name, icon, canOpen }) => (
           <div key={id} className="relative flex justify-center">
             <button type="button" className="dock-icon" aria-label={name} data-tooltip-id="dock-tooltip" data-tooltip-content={name} data-tooltip-show={150} disabled={!canOpen} onClick={() => toggleApp({ id, canOpen })}>
-              <Image src={`/images/${icon}`} height={56} width={56} alt={name} loading="lazy" className={canOpen ? "" : "opacity-60"} />
+              <img src={`/images/${icon}`} alt={name} loading="lazy" className={canOpen ? "" : "opacity-60"} />
             </button>
           </div>
         ))}
