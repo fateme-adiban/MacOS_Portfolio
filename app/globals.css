@@ -267,7 +267,7 @@ body {
       @apply p-5;
 
       ul {
-        @apply grid grid-cols-5 grid-rows-5 gap-2.5;
+        @apply grid grid-cols-5 grid-rows-2 gap-2.5;
 
         li {
           img {
@@ -275,19 +275,15 @@ body {
           }
 
           &:first-child {
-            @apply row-start-1 row-span-3 col-start-1 col-span-3;
+            @apply row-start-1 row-span-1 col-start-1 col-span-3;
           }
 
           &:nth-child(2) {
-            @apply row-start-1 row-span-3 col-start-4 col-span-2;
-          }
-
-          &:nth-child(3) {
-            @apply row-start-4 row-span-2 col-start-3 col-span-3;
+            @apply row-start-1 row-span-1 col-start-4 col-span-2;
           }
 
           &:last-child {
-            @apply row-start-4 row-span-2 col-start-1 col-span-2;
+            @apply row-start-2 row-span-1 col-start-1 col-span-2;
           }
         }
       }
