@@ -30,7 +30,11 @@ const setupTextHover = (container, type) => {
   const { min, max, default: base } = FONT_WEIGHT[type]
 
   const animateLetter = (letter, weight, duration = 0.25) => {
-    return gsap.to(letter, { duration, ease: "power2.out", fontVariationSettings: `"wght" ${weight}` })
+    return gsap.to(letter, {
+      duration,
+      ease: "power2.out",
+      fontVariationSettings: `"wght" ${weight}`
+    })
   }
 
   const handleMouseMove = e => {
@@ -64,6 +68,8 @@ const Welcome = () => {
   const subTitleRef = useRef(null)
 
   useGSAP(() => {
+    if (window.matchMedia("(hover: none)").matches) return
+
     const titleCleanup = setupTextHover(titleRef.current, "title")
     const subTitleCleanup = setupTextHover(subTitleRef.current, "subtitle")
 
@@ -75,15 +81,11 @@ const Welcome = () => {
 
   return (
     <section id="welcome">
-      <p ref={subTitleRef}>{renderText("Hey, I'm Fateme! Welcome to my", "text-3xl font-georama", 100)}</p>
+      <p ref={subTitleRef}>{renderText("Hey, I'm Fateme! Welcome to my", "text-3xl max-sm:text-xl font-georama", 100)}</p>
 
-      <h1 ref={titleRef} className="mt-7">
-        {renderText("portfolio", "text-9xl italic font-georama")}
+      <h1 ref={titleRef} className="mt-7 max-sm:mt-4">
+        {renderText("portfolio", "text-9xl max-sm:text-6xl max-[400px]:text-5xl italic font-georama")}
       </h1>
-
-      <div className="small-screen">
-        <p>This Portfolio is designed for desktop/tablet screens only.</p>
-      </div>
     </section>
   )
 }

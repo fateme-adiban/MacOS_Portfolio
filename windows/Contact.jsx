@@ -16,7 +16,7 @@ const Contact = () => {
         <img src="/images/fateme.jpg" alt="Fateme" className="w-20 rounded-full" />
         <h3>Let's Connect</h3>
 
-        <p>Got an idea? A bug to squash? Or just wanna talk tech? I'm in.</p>
+        <p>Got an idea? A bug to squash? Or just wanna talk tech? I'm in!</p>
 
         <ul>
           {socials.map(({ id, bg, link, icon, text }) => (

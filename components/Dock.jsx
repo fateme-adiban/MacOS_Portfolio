@@ -11,6 +11,8 @@ const Dock = () => {
   const { openWindow, closeWindow, windows } = useWindowStore()
 
   useGSAP(() => {
+    if (window.matchMedia("(max-width: 639px)").matches) return
+
     const dock = dockRef.current
     if (!dock) return
 

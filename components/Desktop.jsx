@@ -19,6 +19,8 @@ const Desktop = () => {
   }
 
   useGSAP(() => {
+    if (window.matchMedia("(max-width: 639px)").matches) return
+
     Draggable.create(".folder")
   }, [])
 

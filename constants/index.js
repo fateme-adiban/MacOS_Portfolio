@@ -196,7 +196,7 @@ const WORK_LOCATION = {
       name: "Timez Dashboard",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-5", // icon position inside Finder
+      position: "top-10 left-5 max-sm:top-5 max-sm:left-5",
       windowPosition: "top-[5vh] left-5", // optional: Finder window position
       children: [
         {
@@ -205,7 +205,7 @@ const WORK_LOCATION = {
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
-          position: "top-5 left-10",
+          position: "top-5 left-10 max-sm:top-5 max-sm:left-2",
           description: ["Timez is a modern admin dashboard built to make complex data easier to manage, understand, and act on.", "It combines structured tables, interactive charts, filters, and reusable UI components into a clean and intuitive interface.", "The goal was to create a dashboard that feels powerful without becoming overwhelming, keeping important information accessible at a glance.", "It's built with Next and Ant Design, focusing on reusable components, responsive layouts, and a smooth user experience."]
         },
         {
@@ -215,15 +215,15 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://tank-internship.vercel.app",
-          position: "top-10 right-20"
+          position: "top-10 right-20 max-sm:top-30 max-sm:left-20 max-sm:right-auto"
         },
         {
-          id: 4,
+          id: 3,
           name: "timez.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
-          position: "top-52 right-80",
+          position: "top-52 right-80 max-sm:top-65 max-sm:left-5 max-sm:right-auto",
           imageUrl: "/images/project-1.png"
         }
       ]
@@ -235,7 +235,8 @@ const WORK_LOCATION = {
       name: "Pump Game",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-52 right-80",
+
+      position: "top-52 right-80 max-sm:top-[260px] max-sm:left-[20px] max-sm:right-auto",
       windowPosition: "top-[20vh] left-7",
       children: [
         {
@@ -244,7 +245,7 @@ const WORK_LOCATION = {
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
-          position: "top-5 right-10",
+          position: "top-5 right-10 max-sm:top-5 max-sm:left-2 max-sm:right-auto",
           description: ["Pump Game is an interactive tether prediction platform built around real-time market movements and fast-paced user interactions.", "It combines dynamic price data, interactive game mechanics, and visual feedback to create an engaging trading-inspired experience.", "The interface focuses on making complex market information easy to scan while keeping the gameplay intuitive and responsive.", "Built with Next and modern frontend technologies, the project showcases interactive UI development, responsive design, and real-time data handling."]
         },
         {
@@ -254,15 +255,15 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://tank-internship-git-pumpgame-fateme-adibans-projects.vercel.app",
-          position: "top-20 left-20"
+          position: "top-20 left-20 max-sm:top-35 max-sm:left-20"
         },
         {
-          id: 4,
+          id: 3,
           name: "pump-game.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
-          position: "top-52 left-80",
+          position: "top-52 left-80 max-sm:top-65 max-sm:left-5",
           imageUrl: "/images/project-2.png"
         }
       ]
@@ -274,7 +275,7 @@ const WORK_LOCATION = {
       name: "Apple 3D Website",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-80",
+      position: "top-10 left-80 max-sm:top-32 max-sm:left-5",
       windowPosition: "top-[33vh] left-7",
       children: [
         {
@@ -283,7 +284,7 @@ const WORK_LOCATION = {
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
-          position: "top-5 left-10",
+          position: "top-5 left-10 max-sm:top-5 max-sm:left-2",
           description: ["This Apple inspired product experience brings a sleek, interactive 3D presentation to the browser.", "Instead of a traditional product page, it uses immersive visuals, smooth animations, and interactive 3D elements to make the product the center of the experience.", "The interface is designed to feel minimal and premium, with every interaction focused on creating a polished product showcase.", "It's built with Next.js, Three.js, and GSAP, combining 3D rendering with smooth animations and responsive design for an engaging experience."]
         },
         {
@@ -293,7 +294,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://apple-adiban.vercel.app",
-          position: "top-10 right-20"
+          position: "top-10 right-20 max-sm:top-35 max-sm:left-20 max-sm:right-auto"
         },
         {
           id: 4,
@@ -301,7 +302,7 @@ const WORK_LOCATION = {
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
-          position: "top-52 right-80",
+          position: "top-52 right-80 max-sm:top-65 max-sm:left-5 max-sm:right-auto",
           imageUrl: "/images/project-3.png"
         }
       ]
@@ -322,7 +323,7 @@ const ABOUT_LOCATION = {
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
-      position: "top-10 left-5",
+      position: "top-10 left-5 max-sm:top-5 max-sm:left-2",
       imageUrl: "/images/fateme.jpg"
     },
     {
@@ -331,7 +332,7 @@ const ABOUT_LOCATION = {
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
-      position: "top-28 right-72",
+      position: "top-28 right-72 max-sm:top-10 max-sm:left-25 max-sm:right-auto",
       imageUrl: "/images/fateme-2.jpg"
     },
     {
@@ -340,7 +341,7 @@ const ABOUT_LOCATION = {
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
-      position: "top-52 left-80",
+      position: "top-52 left-80 max-sm:top-36 max-sm:left-5",
       imageUrl: "/images/fateme-3.jpg"
     },
     {
@@ -349,7 +350,7 @@ const ABOUT_LOCATION = {
       icon: "/images/txt.png",
       kind: "file",
       fileType: "txt",
-      position: "top-60 left-5",
+      position: "top-60 left-5 max-sm:top-65 max-sm:left-20",
       subtitle: "Meet the Developer Behind the Code",
       image: "/images/fateme.jpg",
       description: ["Hey! I’m Fateme 👋, a web developer who enjoys building sleek, interactive websites that actually work well.", "I specialize in JavaScript, React, and Next. I love making things feel smooth, fast, and just a little bit delightful.", "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug."]
@@ -389,7 +390,7 @@ const TRASH_LOCATION = {
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
-      position: "top-10 left-10",
+      position: "top-10 left-10 max-sm:top-5 max-sm:left-5",
       imageUrl: "/images/trash-1.png"
     },
     {
@@ -398,7 +399,7 @@ const TRASH_LOCATION = {
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
-      position: "top-40 left-80",
+      position: "top-40 left-80 max-sm:top-36 max-sm:left-20",
       imageUrl: "/images/trash-2.png"
     }
   ]

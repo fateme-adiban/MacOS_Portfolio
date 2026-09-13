@@ -19,16 +19,11 @@ const Image = () => {
         <h2 className="font-medium">{name}</h2>
       </div>
 
-      <div className="p-5 bg-white">
-        {imageUrl ? (
-          <div className="w-full">
-            <img src={imageUrl} alt={name} className="w-full h-auto max-h-[70vh] object-contain rounded" />
-          </div>
-        ) : null}
-      </div>
+      <div className="image-content">{imageUrl && <img src={imageUrl} alt={name} />}</div>
     </>
   )
 }
 
 const ImageWindow = WindowWrapper(Image, "imgfile")
+
 export default ImageWindow

@@ -8,7 +8,7 @@ import { Document, Page, pdfjs } from "react-pdf"
 import "react-pdf/dist/Page/AnnotationLayer.css"
 import "react-pdf/dist/Page/TextLayer.css"
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`
 
 const Resume = () => {
   return (
@@ -23,9 +23,11 @@ const Resume = () => {
         </a>
       </div>
 
-      <Document file="/files/resume.pdf">
-        <Page pageNumber={1} renderAnnotationLayer renderTextLayer />
-      </Document>
+      <div className="resume-pdf">
+        <Document file="/files/resume.pdf">
+          <Page pageNumber={1} width={window.innerWidth < 640 ? window.innerWidth - 24 : undefined} renderAnnotationLayer renderTextLayer />
+        </Document>
+      </div>
     </>
   )
 }
