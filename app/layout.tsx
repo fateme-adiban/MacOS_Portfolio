@@ -14,17 +14,19 @@ const robotoMono = Roboto_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://fateme-adiban.vercel.app"),
+
   title: "Fateme Adiban",
   description: "Fateme Adiban is a Front-End Developer specializing in React, Next.js, TypeScript, and modern web experiences.",
 
   openGraph: {
     title: "Fateme Adiban",
     description: "Front-End Developer specializing in React, Next.js, TypeScript, and modern web experiences.",
-    url: "https://fatemeadiban.vercel.app/",
+    url: "https://fateme-adiban.vercel.app",
     siteName: "Fateme Adiban",
     images: [
       {
-        url: "/images/fateme.jpg",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Fateme Adiban - Front-End Developer"
@@ -38,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Fateme Adiban",
     description: "Front-End Developer specializing in React, Next.js, TypeScript, and modern web experiences.",
-    images: ["/images/fateme.jpg"]
+    images: ["/images/og-image.png"]
   }
 }
 
