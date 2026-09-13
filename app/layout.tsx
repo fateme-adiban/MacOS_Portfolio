@@ -15,7 +15,31 @@ const robotoMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: "Fateme Adiban",
-  description: "Fateme Adiban is a Front-End Developer specializing in React, Next.js, TypeScript, and modern web experiences."
+  description: "Fateme Adiban is a Front-End Developer specializing in React, Next.js, TypeScript, and modern web experiences.",
+
+  openGraph: {
+    title: "Fateme Adiban",
+    description: "Front-End Developer specializing in React, Next.js, TypeScript, and modern web experiences.",
+    url: "https://fatemeadiban.vercel.app/",
+    siteName: "Fateme Adiban",
+    images: [
+      {
+        url: "/images/fateme.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Fateme Adiban - Front-End Developer"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Fateme Adiban",
+    description: "Front-End Developer specializing in React, Next.js, TypeScript, and modern web experiences.",
+    images: ["/images/fateme.jpg"]
+  }
 }
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
